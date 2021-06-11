@@ -142,18 +142,22 @@ export default class Botbar {
         }
 
         if (ti < YEAR) {
-            var yr = '`' + `${d.getUTCFullYear()}`.slice(-2)
-            var mo = MONTHMAP[d.getUTCMonth()]
+            // var yr = '`' + `${d.getUTCFullYear()}`.slice(-2)
+            // var mo = MONTHMAP[d.getUTCMonth()]
+            var yr = Utils.add_zero(d.getUTCFullYear())
+            var mo = Utils.add_zero(d.getUTCMonth())
             var dd = '01'
         }
-        if (ti <= WEEK) dd = d.getUTCDate()
-        let date = `${dd} ${mo} ${yr}`
+        if (ti <= WEEK) dd = Utils.add_zero(d.getUTCDate())
+        // let date = `${dd} ${mo} ${yr}`
+        let date = `${yr}-${mo}-${dd}`
         let time = ''
 
         if (ti < DAY) {
             let h = Utils.add_zero(d.getUTCHours())
             let m = Utils.add_zero(d.getUTCMinutes())
-            time = h + ":" + m
+            let s = Utils.add_zero(d.getUTCSeconds())
+            time = h + ":" + m + ':' + s
         }
 
         return `${date}  ${time}`
