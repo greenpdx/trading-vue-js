@@ -145,7 +145,7 @@ export default class Botbar {
             // var yr = '`' + `${d.getUTCFullYear()}`.slice(-2)
             // var mo = MONTHMAP[d.getUTCMonth()]
             var yr = Utils.add_zero(d.getUTCFullYear())
-            var mo = Utils.add_zero(d.getUTCMonth())
+            var mo = Utils.add_zero(d.getUTCMonth() + 1)
             var dd = '01'
         }
         if (ti <= WEEK) dd = Utils.add_zero(d.getUTCDate())

@@ -1,5 +1,5 @@
 /*!
- * TradingVue.JS - v1.0.2 - Fri Jun 11 2021
+ * TradingVue.JS - v1.0.2 - Wed Jun 16 2021
  *     https://github.com/tvjsx/trading-vue-js
  *     Copyright (c) 2019 C451 Code's All Right;
  *     Licensed under the MIT license
@@ -8519,7 +8519,7 @@ var Botbar = /*#__PURE__*/function () {
         // var yr = '`' + `${d.getUTCFullYear()}`.slice(-2)
         // var mo = MONTHMAP[d.getUTCMonth()]
         var yr = utils.add_zero(d.getUTCFullYear());
-        var mo = utils.add_zero(d.getUTCMonth());
+        var mo = utils.add_zero(d.getUTCMonth() + 1);
         var dd = '01';
       }
 
