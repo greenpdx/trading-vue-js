@@ -1,5 +1,5 @@
 /*!
- * TradingVue.JS - v1.0.2 - Wed Jun 16 2021
+ * TradingVue.JS - v1.0.2 - Thu Jun 17 2021
  *     https://github.com/tvjsx/trading-vue-js
  *     Copyright (c) 2019 C451 Code's All Right;
  *     Licensed under the MIT license
